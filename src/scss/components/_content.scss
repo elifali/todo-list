@@ -1,0 +1,148 @@
+/* Basics ------------------------------------------------*/
+html, body, p {
+  font-family: $font-stack;
+  background-color: $great-agency-dark;
+  line-height: $line-height-normal;
+}
+
+/* Button ------------------------------------------------*/
+.btn {
+  background-color: $great-agency-darker;
+  color: $light;
+  font-family: $font-stack;
+  border: none;
+  border-radius: 0 7px 7px 0;
+  &:hover {
+    color: $great-agency-green-hover;
+    background-image: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  &:focus {
+    color: $great-agency-green-hover;
+    background-image: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  &:active {
+    color: $great-agency-green-hover;
+    background-image: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  &:focus:active {
+    color: $great-agency-green-hover;
+    background-image: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+/* Image animation----------------------------------------------*/
+img {
+  width: 100%;
+  opacity: 1;
+  animation: fadeIn 5s ease;
+}
+@keyframes fadeIn{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Smooth Transitions ----------------------------------------------*/
+.smooth {
+  -moz-transition: all 1s ease-in-out, left 1.5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out, left 1.5s ease-in-out;
+  -moz-transition: all 1s ease-in-out, left 1.5s ease-in-out;
+  -o-transition: all 1s ease-in-out, left 1.5s ease-in-out;
+  transition: all 1s ease-in-out, left 1.5s ease-in-out;
+      @media screen and (min-width: $break-tablet) {
+    -moz-transition: all 1s ease-in-out, left 1.5s ease-in-out;
+    -webkit-transition: all 1s ease-in-out, left 1.5s ease-in-out;
+    -moz-transition: all 1s ease-in-out, left 1.5s ease-in-out;
+    -o-transition: all 1s ease-in-out, left 1.5s ease-in-out;
+    transition: all 1s ease-in-out, left 1.5s ease-in-out;
+      @media screen and (min-width: $break-mobile) {
+    -moz-transition: all 1s ease-in-out, left 1.5s ease-in-out;
+    -webkit-transition: all 1s ease-in-out, left 1.5s ease-in-out;
+    -moz-transition: all 1s ease-in-out, left 1.5s ease-in-out;
+    -o-transition: all 1s ease-in-out, left 1.5s ease-in-out;
+    transition: all 1s ease-in-out, left 1.5s ease-in-out;
+    }  
+  } 
+}
+
+/* Input Field ------------------------------------------------*/
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-all;
+  background-color: transparent;
+  background-clip: border-box;
+  border: none;
+  border-radius: .25rem;
+  input {
+  &:focus {
+    outline:none;
+    }
+  }
+  .form-control {
+    border: 1px solid #fff;
+    background-clip: none;
+  }
+}
+.my-3 {
+margin-top: 2rem!important;
+margin-left: 5rem;
+@media screen and (max-width: $break-tablet){
+  margin-left: 0;
+  }
+}
+  .input-group>.custom-select:not(:first-child),
+  .input-group>.form-control:not(:first-child) {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  padding: 30px;
+}
+
+/* Drop down items ------------------------------------------------*/
+.list-group-item {
+  background-color: #151515;
+  border-radius: 7px;
+  border-color: #151515;
+  color: $great-agency-light;
+  margin: 17px 20px 3px 96px;
+  padding: 8px 4px 8px 28px;
+  @media screen and (max-width: $break-tablet){
+    margin: 17px 20px 3px 17px;
+  }
+}
+
+/* Font Awesome Icons ------------------------------------------------*/
+.text-success {
+  color: $great-agency-green!important;
+  background: none;
+  border: none;
+  &:hover {
+    color: $great-agency-green-hover!important;
+  }
+}
+
+.text-danger {
+  color: #a72828!important;
+  background: none;
+  border: none;
+  &:hover {
+    color: $great-agency-red-hover!important;
+  }
+}

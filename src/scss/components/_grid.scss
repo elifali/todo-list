@@ -1,0 +1,28 @@
+/* Grid System Desktop, Tablet, Mobile ---------------------------*/
+.container {
+  display: grid;
+  grid-template-columns: $grid-columns;
+  background-color: $great-agency-dark;
+  grid-template-areas:
+  "header1 header2";
+  @media screen and (max-width: $break-tablet) {
+    display: block;
+    padding: 10%;
+  }
+  .header1 {
+    margin-top: 170px;
+    margin-left: 49px; 
+    @media screen and (max-width: $break-tablet) {
+      margin-top: 2%;
+      margin-left: 0%;
+    }
+  }
+  .header2 {
+    margin-top: 170px;
+    @media screen and (max-width: $break-tablet) {
+      margin-top: 2%
+    }
+  }
+}
+
+
